@@ -33,6 +33,7 @@ body{
     --gray-04: #898A93;
     --gray-05: #D5D5DB;
     --mars: #E85937;
+    --mars-hover: #CF3F1D;
     --mars-light: #FF8C70;
     --mars-dark: #CF3F1D;
     --sun: #F5D15F;
@@ -46,10 +47,10 @@ body{
     --background-form: #0E0D40;
 
     /* FONTS */
-    --font-display: 800 ${pixelToRem(62)}/${pixelToRem(96)} 'Heebo', sans-serif;
-    --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(48)} 'Heebo', sans-serif;
-    --font-heading-2: 500 ${pixelToRem(24)}/${pixelToRem(32)} 'Heebo', sans-serif;
-    --font-heading-3: 400 ${pixelToRem(20)}/${pixelToRem(24)} 'Heebo', sans-serif;
+    --font-heading-1: 800 ${pixelToRem(62)}/${pixelToRem(96)} 'Heebo', sans-serif;
+    --font-heading-2: 700 ${pixelToRem(32)}/${pixelToRem(48)} 'Heebo', sans-serif;
+    --font-heading-3: 500 ${pixelToRem(24)}/${pixelToRem(32)} 'Heebo', sans-serif;
+    --font-heading-4: 400 ${pixelToRem(20)}/${pixelToRem(24)} 'Heebo', sans-serif;
     --font-mobile-heading-1: 800 ${pixelToRem(36)}/${pixelToRem(50)} 'Heebo', sans-serif;
     --font-mobile-text-1: 500 ${pixelToRem(14)}/${pixelToRem(24)} 'Heebo', sans-serif;
     --text-4: 500 ${pixelToRem(18)}/${pixelToRem(32)} 'Heebo', sans-serif;
