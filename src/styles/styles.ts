@@ -68,8 +68,8 @@ export const ImageMain = styled.svg`
     background-image: url('./images/home-mars-right.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    width: ${pixelToRem(472)};
-    height: ${pixelToRem(600)};
+    width: ${pixelToRem(474)};
+    height: ${pixelToRem(607)};
 
     @media ${device.custom} {
         filter: brightness(.5);
