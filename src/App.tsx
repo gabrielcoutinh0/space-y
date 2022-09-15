@@ -1,5 +1,5 @@
 import { GlobalStyles } from './styles/globalstyles'
-import { Container, Header, Logo, Main, TitleH1, FeaturedText, SubTitle, ImageMain, CardsMain, ContainerAbout, About, TitleH2, Paragraph, ImageAbout, DivTexts, DivGallery, DivTextGallery, ContainerForm, DivForm, BoxForm, TicketIcon, TitleH3, ParagraphForm, ImageForm, CheckBox, LabelCheckBox } from './styles/styles';
+import { Container, Header, Logo, Main, TitleH1, FeaturedText, SubTitle, ImageMain, CardsMain, ContainerAbout, About, TitleH2, Paragraph, ImageAbout, DivTexts, DivGallery, DivTextGallery, ContainerForm, DivForm, BoxForm, TicketIcon, TitleH3, ParagraphForm, ImageForm, CheckBox, LabelCheckBox, ContainerFooter, DivFooter, ImageFooter, Footer, SocialNetworks, LinkFooter, ULFooter, LIFooter } from './styles/styles';
 import Button from './components/Button';
 import Card from './components/Card';
 import Gallery from './components/Gallery';
@@ -26,8 +26,9 @@ function App() {
                 <SubTitle>A primeira viagem para Marte estará disponivel apartir do dia 12/03/2028. Inscreva-se em nossa lista de espera.</SubTitle>
                 
                 <Button text='Inscreva-se agora!' primary/>    
-                <ImageMain />
+                <ImageMain />  
             </Main>
+
 
             <CardsMain>
                 <Card src='./images/icon-rocket.svg' text='Foguetes com a mais alta tecnologia e conforto.' alt='Rocket'/>
@@ -82,6 +83,31 @@ function App() {
                 <ImageForm />
             </DivForm>
         </ContainerForm>
+
+        <ContainerFooter>
+            <DivFooter>
+                <ImageFooter />
+                <Footer>
+                    <Logo>
+                        <a href='/'><img src='./images/logo-space-y.svg' alt="Space Y" /></a>
+                    </Logo>
+                    <SocialNetworks>
+                        <a href='/'><img src='./images/instagram.svg' alt='Instagram' /></a>
+                        <a href='/'><img src='./images/linkedin.svg' alt='Linkedin' /></a>
+                        <a href='/'><img src='./images/facebook.svg' alt='Facebook' /></a>
+                    </SocialNetworks>
+                    <LinkFooter>
+                        <ULFooter>
+                            <a href='/'><LIFooter>Início</LIFooter></a>
+                            <a href='/'><LIFooter>Sobre nós</LIFooter></a>
+                            <a href='/'><LIFooter>Missões</LIFooter></a>
+                            <a href='/'><LIFooter>Contato</LIFooter></a>
+                        </ULFooter>
+                    </LinkFooter>
+                </Footer>
+            </DivFooter>
+
+        </ContainerFooter>
     </>
   );
 }

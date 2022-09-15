@@ -9,7 +9,7 @@ export const DivCard = styled.div<CardProps>`
 `;
 
 type ImageProps = Omit<CardProps, 'text'>;
-export const ImageCard = styled.image<ImageProps>`
+export const ImageCard = styled.svg<ImageProps>`
     width: ${pixelToRem(56)};
     height: ${pixelToRem(56)};
     background-image: ${(props) => `url(${props.src})`};

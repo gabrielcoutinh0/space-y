@@ -50,4 +50,7 @@ body{
     --text-2: 500 ${pixelToRem(14)}/${pixelToRem(20)} 'Heebo', sans-serif;
     --text-1: 400 ${pixelToRem(16)}/${pixelToRem(24)} 'Heebo', sans-serif;
     --text-0: 400 ${pixelToRem(14)}/${pixelToRem(24)} 'Heebo', sans-serif;
+
+    /* MAX-WIDTH */
+    --max-width: 1400px;
 }`;

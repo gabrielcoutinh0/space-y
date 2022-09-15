@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import pixelToRem from "../../utils/pxToRem";
+import { device } from "../../styles/responsive";
 
 const swiper = keyframes`
   0% {
@@ -13,14 +14,19 @@ const swiper = keyframes`
 export const ContentGallery = styled.div`
     overflow: hidden;
     max-width: ${pixelToRem(780)};
+    width: 100%;
 `;
 
 export const Arrow = styled.div`
     background: url("/images/arrow-gallery.svg") no-repeat;
-    width: ${pixelToRem(25)};
+    width: ${pixelToRem(90)};
     height: ${pixelToRem(25)};
     margin: auto ${pixelToRem(18)} auto 0;
     cursor: pointer;  
+
+    @media ${device.custom2} {
+        display: none;
+    }
 `;
 
 export const SlideTrack = styled.div`
