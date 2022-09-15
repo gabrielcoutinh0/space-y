@@ -86,7 +86,9 @@ function App() {
 
         <ContainerFooter>
             <DivFooter>
-                <ImageFooter />
+                <ImageFooter>
+                    <img src='/images/smoke.svg' alt='Fumaça' />
+                </ImageFooter>
                 <Footer>
                     <Logo>
                         <a href='/'><img src='./images/logo-space-y.svg' alt="Space Y" /></a>

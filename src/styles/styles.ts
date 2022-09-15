@@ -241,7 +241,7 @@ export const LabelCheckBox = styled.label`
 `;
 
 export const ContainerFooter = styled.section`
-    padding-top: ${pixelToRem(272)};
+    padding-top: ${pixelToRem(130)};
     background: url('./images/stars.svg'), var(--gray-01);
 
     @media (max-width: 375px){
@@ -253,25 +253,17 @@ export const DivFooter = styled.div`
     position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 17px;
 
     @media ${device.custom2} {
         padding: unset;
     }
 `;
 
-export const ImageFooter = styled.svg`
-    position: absolute;
-    background-image: url('./images/smoke.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: ${pixelToRem(1440)};
-    height: ${pixelToRem(370)};
-    width: 98%;
-    bottom: ${pixelToRem(30)};
+export const ImageFooter = styled.div`
+    width: 100%;
 
-    @media (max-width: 374px){
-        bottom: ${pixelToRem(192)};
+    & > img{
+        width: 100%;
     }
 `;
 
@@ -279,6 +271,7 @@ export const Footer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 17px;
 
     @media ${device.custom2} {
         flex-direction: column;
