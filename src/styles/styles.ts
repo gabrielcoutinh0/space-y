@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import pixelToRem from "../utils/pxToRem";
 import { device } from "./responsive";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
     max-width: var(--max-width);
-    margin:  ${pixelToRem(24)} auto ${pixelToRem(50)};
+    margin:  ${pixelToRem(24)} auto 0;
     padding-left: 17px;
 `;
 
@@ -76,7 +77,7 @@ export const ImageMain = styled.svg`
     }    
 `;
 
-export const CardsMain = styled.div`
+export const CardsMain = styled(motion.div)`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,6 +87,7 @@ export const ContainerAbout = styled.section`
     background: url('./images/lines.svg'),  url('./images/stars.svg'), var(--background-section);
     background-repeat: no-repeat;
     background-position: left center;
+    padding-top: ${pixelToRem(112)};
 `;
 
 export const About = styled.section`
@@ -102,7 +104,7 @@ export const About = styled.section`
     }
 `;
 
-export const ImageAbout = styled.svg`
+export const ImageAbout = styled(motion.svg)`
     background-image: url('./images/mars.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -151,7 +153,7 @@ export const DivGallery = styled.div`
     }
 `;
 
-export const DivTextGallery = styled.div`
+export const DivTextGallery = styled(motion.div)`
     margin-right: ${pixelToRem(90)};
 `;
 
@@ -174,7 +176,7 @@ export const DivForm = styled.div`
     }
 `;
 
-export const BoxForm = styled.form`
+export const BoxForm = styled(motion.form)`
     background-color: var(--background-form);
     border-radius: ${pixelToRem(20)};
     padding: ${pixelToRem(39)} ${pixelToRem(51)} ${pixelToRem(61)};
@@ -206,7 +208,7 @@ export const ParagraphForm = styled.h3`
     max-width: ${pixelToRem(308)};
 `;
 
-export const ImageForm = styled.svg`
+export const ImageForm = styled(motion.svg)`
     background-image: url('/images/rocket.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -259,7 +261,7 @@ export const DivFooter = styled.div`
     }
 `;
 
-export const ImageFooter = styled.div`
+export const ImageFooter = styled(motion.div)`
     width: 100%;
 
     & > img{

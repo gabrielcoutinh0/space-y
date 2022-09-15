@@ -30,7 +30,19 @@ function App() {
             </Main>
 
 
-            <CardsMain>
+            <CardsMain
+                whileInView="visible"
+                initial="initial"
+                viewport={{ once: true }}
+                variants={{
+                initial: { opacity: 0, y: 10 },
+                visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 1, delay: 0.3 },
+                },
+                }}
+            >
                 <Card src='./images/icon-rocket.svg' text='Foguetes com a mais alta tecnologia e conforto.' alt='Rocket'/>
 
                 <Card src='./images/icon-flag.svg' text='Mais de 100 missões consecutivas com sucesso.' alt='Flag'/>
@@ -41,7 +53,19 @@ function App() {
 
         <ContainerAbout>
             <About>
-                <ImageAbout />
+                <ImageAbout 
+                    whileInView="visible"
+                    initial="initial"
+                    viewport={{ once: true }}
+                    variants={{
+                      initial: { opacity: 0, x: "-130%" },
+                      visible: {
+                        opacity: 1,
+                        x: 0,
+                        transition: { duration: 0.8, delay: 0.5 },
+                      },
+                    }}
+                />
                 <DivTexts>
                     <FeaturedText>Por que Marte?</FeaturedText>
 
@@ -54,7 +78,19 @@ function App() {
             </About>
 
             <DivGallery>
-                <DivTextGallery>
+                <DivTextGallery
+                    whileInView="visible"
+                    initial="initial"
+                    viewport={{ once: true }}
+                    variants={{
+                      initial: { opacity: 0, x: 60 },
+                      visible: {
+                        opacity: 1,
+                        x: 0,
+                        transition: { duration: 1, delay: 0.5 },
+                      },
+                    }}
+                >
                     <Logo>
                         <img src='./images/logo-space-y.svg' alt="Space Y" />
                     </Logo>
@@ -67,7 +103,19 @@ function App() {
 
         <ContainerForm>
             <DivForm>
-                <BoxForm>
+                <BoxForm 
+                    whileInView="visible"
+                    initial="initial"
+                    viewport={{ once: true }}
+                    variants={{
+                      initial: { opacity: 0, x: -60 },
+                      visible: {
+                        opacity: 1,
+                        x: 0,
+                        transition: { duration: 1, delay: 0.6 },
+                      },
+                    }}
+                >
                     <TicketIcon><img src='./images/icon-ticket.svg' alt='Ticket' /></TicketIcon>
                     <TitleH3>Garanta sua vaga para a primeira viagem</TitleH3>
                     <ParagraphForm>Preencha os campos abaixo para entrar na lista de espera</ParagraphForm>
@@ -80,13 +128,37 @@ function App() {
                     </LabelCheckBox>
                     <Button text='Garantir minha vaga' primary fullWidth />
                 </BoxForm>
-                <ImageForm />
+                <ImageForm 
+                    whileInView="visible"
+                    initial="initial"
+                    viewport={{ once: true }}
+                    variants={{
+                      initial: { opacity: 0, y: 200 },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: 1, delay: 0.5 },
+                      },
+                    }}
+                />
             </DivForm>
         </ContainerForm>
 
         <ContainerFooter>
             <DivFooter>
-                <ImageFooter>
+                <ImageFooter
+                    whileInView="visible"
+                    initial="initial"
+                    viewport={{ once: true }}
+                    variants={{
+                      initial: { opacity: 0, y: 0 },
+                      visible: {
+                        opacity: 1,
+                        y: -100,
+                        transition: { duration: 0.7, delay: 0.2 },
+                      },
+                    }}
+                >
                     <img src='/images/smoke.svg' alt='Fumaça' />
                 </ImageFooter>
                 <Footer>
