@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 import pixelToRem from "../utils/pxToRem";
-import { device } from "./responsive";
 
 export const GlobalStyles = createGlobalStyle`
 *{
@@ -12,14 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   font-family: 'Heebo', sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--background);
-  
-  @media ${device.mobile} {
-    background: url('/images/stars-mobile.png');
-  }
-  @media ${device.tablet} {
-    background: url('/images/stars-mobile.png');
-  }
+  background: url('./images/stars.svg'), var(--space-dark);
  }
 
 :root {

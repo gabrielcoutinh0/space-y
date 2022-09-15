@@ -3,11 +3,12 @@ import { ButtonComponent } from './styles';
 export interface ButtonProps {
   text?: string;
   fullWidth?: boolean;
+  primary?: boolean;
 }
 
-function Button({ text, fullWidth }: ButtonProps) {
+function Button({ text, fullWidth, primary }: ButtonProps) {
   return (
-        <ButtonComponent fullWidth={fullWidth}>
+        <ButtonComponent fullWidth={fullWidth} primary={primary}>
             {text}
         </ButtonComponent>
   );
