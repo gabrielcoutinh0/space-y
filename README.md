@@ -32,5 +32,5 @@ yarn install
 yarn start
 ```
 
-## 🖼️ Layout
+## 🖼️ Layout de inspiração
 - [Figma](https://www.figma.com/community/file/986447430009792279/duplicate)
