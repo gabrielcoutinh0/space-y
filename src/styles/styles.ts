@@ -232,8 +232,19 @@ export const CheckBox = styled.input.attrs({type: 'checkbox'})`
     appearance: none;
 
     &:checked{
-        background: var(--mars);
+        position: relative;
+        background-color: var(--mars);
+        border: none;
     }
+
+    &:checked:before{
+        content: '✔';
+        position: absolute;
+        color: var(--gray-01);
+        right: ${pixelToRem(6)};
+        top: ${pixelToRem(2)};
+    }
+    
 `;
 
 export const LabelCheckBox = styled.label`
